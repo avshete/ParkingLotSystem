@@ -1,7 +1,7 @@
 package Exception;
 
-public class SpotNotFoundException extends RuntimeException {
-  public SpotNotFoundException(String message) {
-    super(message);
-  }
+public class SpotNotFoundException extends ParkingLotException {
+    public SpotNotFoundException(String spotId) {
+        super("No spot found with ID: " + spotId);
+    }
 }

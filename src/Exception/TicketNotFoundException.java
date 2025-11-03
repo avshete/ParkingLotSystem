@@ -1,7 +1,7 @@
 package Exception;
 
-public class TicketNotFoundException extends RuntimeException {
-  public TicketNotFoundException(String message) {
-    super(message);
-  }
+public class TicketNotFoundException extends ParkingLotException {
+    public TicketNotFoundException(String ticketId) {
+        super("No ticket found with ID: " + ticketId);
+    }
 }
